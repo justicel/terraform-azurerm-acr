@@ -32,4 +32,5 @@ The Password associated with the Container Registry Admin
 account - if the admin account is enabled.
 EOT
   value       = azurerm_container_registry.acr.admin_enabled ? azurerm_container_registry.acr.admin_password : ""
+  sensitive   = true
 }
